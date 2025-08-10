@@ -6,7 +6,7 @@ export default function Index() {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace("/home");  // يحولك للصفحة /home
+    router.replace("/home");
   }, [router]);
 
   return <p>جاري التحويل...</p>;
