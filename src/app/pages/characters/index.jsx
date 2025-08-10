@@ -1,6 +1,6 @@
 // src/pages/characters/index.jsx
 import React, { useEffect, useState } from "react";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../../components/Navbar";
 
 export default function Characters(){
   const [chars,setChars]=useState([]);

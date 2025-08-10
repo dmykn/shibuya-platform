@@ -2,7 +2,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import app, { auth } from "../../lib/firebase"; // تأكد الملف lib/firebase.js موجود
+import app, { auth } from "../../../lib/firebase.js"; // تأكد الملف lib/firebase.js موجود
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 import { useToast } from "./toast.jsx";

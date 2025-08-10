@@ -1,10 +1,10 @@
 // src/pages/login.jsx
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar.jsx";
 import "../app/globals.css";
-import app, { auth } from "../../lib/firebase";
+import app, { auth } from "../../../lib/firebase.js";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, sendPasswordResetEmail } from "firebase/auth";
-import { useToast } from "../components/toast.jsx";
+import { useToast } from "../../components/toast.jsx";
 
 export default function LoginPage() {
   const [mode, setMode] = useState("login");

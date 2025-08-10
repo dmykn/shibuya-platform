@@ -1,6 +1,6 @@
 // src/pages/anime/index.jsx
 import React, { useEffect, useState } from "react";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../../components/Navbar";
 
 export default function Animes(){
   const [animes,setAnimes] = useState([]);

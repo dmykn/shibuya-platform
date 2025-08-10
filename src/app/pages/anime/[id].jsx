@@ -1,8 +1,8 @@
 // src/pages/anime/[id].jsx
 import React, { useEffect, useState } from "react";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../../components/Navbar";
 import { useRouter } from "next/router";
-import app, { auth } from "../../../lib/firebase";
+import app, { auth } from "../../../../lib/firebase";
 import { onAuthStateChanged } from "firebase/auth";
 
 function parseDate(d){ if(!d) return ""; if(typeof d==="string") return new Date(d).toLocaleString(); if(d._seconds) return new Date(d._seconds*1000).toLocaleString(); return new Date(d).toLocaleString(); }
