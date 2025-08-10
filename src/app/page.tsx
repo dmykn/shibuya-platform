@@ -1,6 +1,9 @@
 // src/app/page.tsx
-import { redirect } from "next/navigation";
+import React from "react";
 
 export default function Page() {
-  redirect("/home");
+  if (typeof window !== "undefined") {
+    window.location.href = "/home";
+  }
+  return <div>Redirecting...</div>;
 }
