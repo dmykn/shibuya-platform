@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Firebase Admin SDK secret key
+src/app/secrets/shonen-aarabic-firebase-adminsdk-fbsvc-de9b196565.json
