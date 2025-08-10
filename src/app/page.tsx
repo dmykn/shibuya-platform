@@ -1,6 +1,12 @@
-// src/app/page.tsx
-import { redirect } from "next/navigation";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
-export default function Page() {
-  redirect("/home");
+export default function Index() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace("/home");
+  }, [router]);
+
+  return <p>جاري التحويل...</p>;
 }
